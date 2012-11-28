@@ -1,3 +1,6 @@
+stage0:
+	@true
+
 stage1:
 	rpmbuild --rebuild --define "_rpmdir rpm/" libdrm-*.src.rpm 
 	rpmbuild --rebuild --define "_rpmdir rpm/" xorg-x11-util-macros-*.src.rpm
@@ -12,6 +15,12 @@ stage2:
 	rpmbuild --rebuild --define "_rpmdir rpm/" xorg-x11-drv-nouveau-*.src.rpm 
 	rpmbuild --rebuild --define "_rpmdir rpm/" xorg-x11-drv-ati-fixed-*.src.rpm 
 	rpmbuild --rebuild --define "_rpmdir rpm/" mesa-*.src.rpm 
+
+stage3:
+	@true
+
+stage4:
+	@true
 
 nvidia:
 	$(MAKE) -C nvidia-prioprietary-drivers rpms
