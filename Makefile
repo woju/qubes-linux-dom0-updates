@@ -1,11 +1,11 @@
 stage0:
-	true
+	./patch-and-build-libdb.sh libdb-*.src.rpm
 
 stage1:
-	true
+	./patch-and-build-rpm.sh rpm-*.src.rpm
 
 stage2:
-	true
+	rpmbuild --rebuild --define "_rpmdir rpm/" deltarpm-*.src.rpm
 
 stage3:
 	true
