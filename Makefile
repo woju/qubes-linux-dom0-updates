@@ -13,6 +13,10 @@ stage3:
 stage4:
 	true
 
+update-repo-upgrade:
+	ln -f rpm/noarch/*.rpm ../yum/current-release/current/dom0-upgrade-r2/rpm/
+	ln -f rpm/x86_64/*.rpm ../yum/current-release/current/dom0-upgrade-r2/rpm/
+
 
 clean:
 
