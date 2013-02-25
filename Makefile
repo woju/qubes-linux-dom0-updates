@@ -17,11 +17,11 @@ stage4:
 	true
 
 update-repo-upgrade:
-	ln -f rpm/noarch/rpm*$(DIST_DOM0).noarch.rpm ../yum/current-release/current/dom0-upgrade-r2/rpm/
-	ln -f rpm/x86_64/libdb*$(DIST_DOM0).x86_64.rpm ../yum/current-release/current/dom0-upgrade-r2/rpm/
-	ln -f rpm/x86_64/delta*$(DIST_DOM0).x86_64.rpm ../yum/current-release/current/dom0-upgrade-r2/rpm/
-	ln -f rpm/x86_64/rpm*$(DIST_DOM0).x86_64.rpm ../yum/current-release/current/dom0-upgrade-r2/rpm/
-	ln -f rpm/x86_64/qubes-dom0-upgrade-packages-placeholder*$(DIST_DOM0).x86_64.rpm ../yum/current-release/current/dom0-upgrade-r2/rpm/
+	ln -f rpm/noarch/rpm*$(DIST_DOM0).noarch.rpm ../yum/r1/current/dom0-upgrade-r2/rpm/
+	ln -f rpm/x86_64/libdb*$(DIST_DOM0).x86_64.rpm ../yum/r1/current/dom0-upgrade-r2/rpm/
+	ln -f rpm/x86_64/delta*$(DIST_DOM0).x86_64.rpm ../yum/r1/current/dom0-upgrade-r2/rpm/
+	ln -f rpm/x86_64/rpm*$(DIST_DOM0).x86_64.rpm ../yum/r1/current/dom0-upgrade-r2/rpm/
+	ln -f rpm/x86_64/qubes-dom0-upgrade-packages-placeholder*$(DIST_DOM0).x86_64.rpm ../yum/r1/current/dom0-upgrade-r2/rpm/
 
 clean:
 
