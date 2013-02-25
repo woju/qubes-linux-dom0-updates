@@ -1,4 +1,5 @@
 stage0:
+	rpmbuild --define "_rpmdir rpm/" -bb qubes-dom0-upgrade-packages-placeholder.spec
 	./patch-and-build-libdb.sh libdb-*.src.rpm
 
 stage1:
